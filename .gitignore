@@ -5,7 +5,29 @@
 expo-env.d.ts
 # @end expo-cli
 
-node_modules
-
+# Expo
 .expo/
 .expo-shared/
+
+# React Native
+node_modules/
+android/
+ios/
+build/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
