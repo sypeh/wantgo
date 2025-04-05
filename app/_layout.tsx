@@ -8,8 +8,8 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-import { TamaguiProvider } from "tamagui";  // インポートの追加
-import appConfig from "../tamagui.config";  // インポートの追加
+import { TamaguiProvider } from 'tamagui'; // インポートの追加
+import appConfig from '../tamagui.config'; // インポートの追加
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
