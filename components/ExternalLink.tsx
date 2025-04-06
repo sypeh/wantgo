@@ -1,10 +1,12 @@
 import { type ComponentProps } from 'react';
 import { Platform } from 'react-native';
 
-import { Link } from 'expo-router';
+import { ExternalPathString, Link, RelativePathString } from 'expo-router';
 import { openBrowserAsync } from 'expo-web-browser';
 
-type Props = Omit<ComponentProps<typeof Link>, 'href'> & { href: string };
+type Props = Omit<ComponentProps<typeof Link>, 'href'> & {
+  href: RelativePathString | ExternalPathString;
+};
 
 export function ExternalLink({ href, ...rest }: Props) {
   return (

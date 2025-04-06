@@ -1,6 +1,7 @@
 // This file is a fallback for using MaterialIcons on Android and web.
 import React from 'react';
-import { OpaqueColorValue, StyleProp, ViewStyle } from 'react-native';
+import { OpaqueColorValue } from 'react-native';
+import { TextStyle } from 'react-native';
 
 import { SymbolWeight } from 'expo-symbols';
 
@@ -37,7 +38,7 @@ export function IconSymbol({
   name: IconSymbolName;
   size?: number;
   color: string | OpaqueColorValue;
-  style?: StyleProp<ViewStyle>;
+  style?: TextStyle;
   weight?: SymbolWeight;
 }) {
   return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
