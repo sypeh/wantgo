@@ -1,4 +1,4 @@
-import { server } from './server';
+import { server } from './mocks/server';
 
 // テスト前にサーバーを起動
 beforeAll(() => server.listen());
