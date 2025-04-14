@@ -29,7 +29,7 @@ export default function RootLayout() {
   }
 
   return (
-    <TamaguiProvider config={appConfig} defaultTheme="dark">
+    <TamaguiProvider config={appConfig} defaultTheme="light">
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
